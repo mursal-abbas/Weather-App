@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #fff;
+  transition: background 0.5s ease;
+}
+
+#heading {
+  font-size: 2.5rem;
+  color: #ffd700;
+  text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.5);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#input {
+  width: 280px;
+  padding: 12px 15px;
+  border-radius: 12px;
+  border: none;
+  font-size: 16px;
+  margin-bottom: 15px;
+  outline: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+#input:focus {
+  box-shadow: 0 4px 20px rgba(255,255,255,0.5);
+}
+
+#button {
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  background-color: #ffd700;
+  color: #1e3c72;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+#button:hover {
+  background-color: #ffec99;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+}
+
+.weather-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 18px;
+  padding: 20px;
+  margin-top: 20px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.weather-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.weather-card p {
+  margin: 8px 0;
+  font-size: 16px;
+  padding: 8px 0;
+  border-radius: 0;
+  width: 100%;
+  background-color: transparent;
+  text-align: center;
+  box-shadow: none;
+  color: #fff;
+}
+
+#city_para,
+#country_para,
+#local_time_para,
+#cels_temp_para,
+#farh_temp_para,
+#cond_para {
+  font-weight: bold;
+  font-size: 18px;
+  color: #ffd700;
+}
+
+@media screen and (max-width: 480px) {
+  #input,
+  #button,
+  .weather-card {
+    width: 90%;
+  }
+
+  #heading {
+    font-size: 2rem;
+  }
+
+  .weather-card p {
+    font-size: 15px;
+  }
+}
