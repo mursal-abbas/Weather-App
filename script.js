@@ -38,9 +38,4 @@ button.addEventListener("click", function () {
       conditionPara.textContent = "Condition: " + condition;
       localTimePara.textContent = "Time: " + time;
     })
-
-    .catch((err) => {
-      alert("Invalid city or check network!");
-      console.log(err);
-    });
 });
