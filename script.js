@@ -38,4 +38,8 @@ button.addEventListener("click", function () {
       conditionPara.textContent = "Condition: " + condition;
       localTimePara.textContent = "Time: " + time;
     })
+    .catch((err) => {
+      alert("Invalid location or Check console for the error!")
+      console.log(err)
+    })
 });
