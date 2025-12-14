@@ -19,7 +19,7 @@ button.addEventListener("click", function () {
   }
 
   fetch(
-    `http://api.weatherapi.com/v1/current.json?key=78b6c3ea309a4841a47174459251312&q=${cityName}&aqi=yes`
+    `https://api.weatherapi.com/v1/current.json?key=78b6c3ea309a4841a47174459251312&q=${cityName}&aqi=yes`
   )
     .then((response) => response.json())
     .then((data) => {
